@@ -1,0 +1,50 @@
+[
+  {
+    "file": "texgyretermes-regular.otf",
+    "source": "https://ctan.org/pkg/tex-gyre",
+    "acquired_from": "official Tectonic v33 bundle already cached by compiler",
+    "license": "GUST Font License",
+    "sha256": "cc3fe7c707b81428d23d54df3eadd9228a2bf6a4d43125d94df56f5f63134659",
+    "bytes": 140932
+  },
+  {
+    "file": "texgyretermes-bold.otf",
+    "source": "https://ctan.org/pkg/tex-gyre",
+    "acquired_from": "official Tectonic v33 bundle already cached by compiler",
+    "license": "GUST Font License",
+    "sha256": "2fb3e952065fa153c7e4e64e04b98b9d79225739b6025aa3f0f0782d299ff61e",
+    "bytes": 139480
+  },
+  {
+    "file": "texgyretermes-italic.otf",
+    "source": "https://ctan.org/pkg/tex-gyre",
+    "acquired_from": "official Tectonic v33 bundle already cached by compiler",
+    "license": "GUST Font License",
+    "sha256": "6dd103a1672e50568cd2f8a706ccd48443d44d7d073a59d2286f4e6f746575d6",
+    "bytes": 141324
+  },
+  {
+    "file": "texgyretermes-bolditalic.otf",
+    "source": "https://ctan.org/pkg/tex-gyre",
+    "acquired_from": "official Tectonic v33 bundle already cached by compiler",
+    "license": "GUST Font License",
+    "sha256": "1bf6af99cb0e26c12951317032d79b96ae009551e59ccf02a5b24f325ecfec87",
+    "bytes": 144180
+  },
+  {
+    "file": "texgyretermes-math.otf",
+    "source": "https://ctan.org/pkg/tex-gyre-math",
+    "acquired_from": "official Tectonic v33 bundle already cached by compiler",
+    "license": "GUST Font License",
+    "sha256": "e5ce42b4fe826b7ea4c0874359decf0b294439355c511a4794107a9924e2cd5a",
+    "bytes": 532404
+  },
+  {
+    "file": "STIXTwoMath-Regular.otf",
+    "source": "https://github.com/stipub/stixfonts",
+    "download_url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/fonts/static_otf/STIXTwoMath-Regular.otf",
+    "license": "SIL OFL 1.1",
+    "sha256": "3a5f3f26f40d5698b3c62dd085d48d6663696a3f80825aab8b553d5097518e8c",
+    "bytes": 838652
+  }
+]

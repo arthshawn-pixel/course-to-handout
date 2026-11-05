@@ -1,0 +1,36 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=21mm,headheight=15pt]{geometry}
+\usepackage{fontspec,xeCJK,unicode-math}
+@@FONTS@@
+\usepackage{amsmath,graphicx,multicol,longtable,booktabs,array,needspace}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage[unicode,colorlinks=true,urlcolor=blue!55!black,linkcolor=black]{hyperref}
+\definecolor{ink}{HTML}{243B50}
+\definecolor{paperblue}{HTML}{EEF3F6}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small @@TITLE@@}\fancyhead[R]{\small 网课转讲义}
+\fancyfoot[C]{\thepage}
+\setlength{\parindent}{1.5em}\setlength{\parskip}{4pt}
+\setlength{\columnsep}{9mm}\setlength{\emergencystretch}{1em}
+\newtcolorbox{lessonbox}[2][]{enhanced,breakable,colback=paperblue,colframe=ink!60,
+  boxrule=.45pt,arc=0pt,left=7pt,right=7pt,top=6pt,bottom=6pt,
+  fonttitle=\bfseries,coltitle=ink,colbacktitle=paperblue,title={#2},title after break={#2（续）},#1}
+\newcommand{\smalllabel}[1]{\par\smallskip{\bfseries #1}\par\nobreak}
+\begin{document}
+{\LARGE\bfseries @@TITLE@@\par}
+\medskip
+{\color{ink} @@LEVEL@@\quad{}|\quad{}@@STATUS@@\quad{}|\quad{}@@LAYOUT@@}\par
+\medskip\hrule\medskip
+@@INTRO@@
+@@BODY@@
+\clearpage
+\section*{原视频定位附录}
+{\small 页码由编译后的标签自动回填。链接能否按秒跳转取决于播放器；打印时可按分 P 和时间查找。}
+\begin{longtable}{@{}p{.43\textwidth}r p{.36\textwidth}@{}}
+\toprule 内容 & 页码 & 来源与时间\\\midrule\endhead
+@@INDEX@@
+\bottomrule
+\end{longtable}
+@@ISSUES@@
+\end{document}

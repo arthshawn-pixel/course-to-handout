@@ -1,0 +1,31 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=@@MARGIN@@mm,headheight=16pt]{geometry}
+\usepackage{fontspec,xeCJK,unicode-math}
+@@FONTS@@
+\usepackage{amsmath,graphicx,longtable,booktabs,array,needspace}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\sisetup{per-mode=symbol}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage[unicode,colorlinks=true,urlcolor=blue!45!black,linkcolor=black]{hyperref}
+\definecolor{ink}{HTML}{@@ACCENT@@}
+\definecolor{pale}{HTML}{F0F4F5}
+\definecolor{warm}{HTML}{F8F4E8}
+\newtcolorbox{questionbox}{enhanced,breakable,colback=pale,colframe=ink!30,boxrule=.35pt,arc=0pt,left=7pt,right=7pt,top=6pt,bottom=6pt}
+\newtcolorbox{knowledgebox}[1]{enhanced,breakable,colback=warm,colframe=ink!65,boxrule=0pt,borderline west={1pt}{0pt}{ink!65},arc=0pt,left=8pt,right=7pt,top=6pt,bottom=6pt,title={#1},coltitle=ink,colbacktitle=warm,fonttitle=\bfseries}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small @@HEADER@@}\fancyhead[R]{\small\nouppercase{\rightmark}}\fancyfoot[C]{\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\abovedisplayskip}{7pt}\setlength{\belowdisplayskip}{7pt}
+\newcommand{\teachingtitle}[1]{\Needspace{4\baselineskip}\par\medskip{\large\bfseries\color{ink}#1}\par\smallskip}
+\newcommand{\stagetitle}[1]{\Needspace{3\baselineskip}\par\smallskip{\bfseries\color{ink}#1}\par\nobreak}
+\begin{document}
+{\LARGE\bfseries\color{ink}@@TITLE@@\par}
+\smallskip
+@@INTRO@@
+\medskip\hrule\medskip
+@@BODY@@
+@@SOURCEINDEX@@
+\end{document}

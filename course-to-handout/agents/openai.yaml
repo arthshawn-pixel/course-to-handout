@@ -1,0 +1,4 @@
+interface:
+  display_name: "网课转讲义"
+  short_description: "将理工与经管课程整理为兼容学科符号、保留推导和来源的打印讲义"
+  default_prompt: "使用 $course-to-handout 将这段课程整理为单栏自学讲义，保留完整步骤和来源。"

@@ -1,0 +1,6 @@
+# Optional media acquisition dependencies; core validation uses Python stdlib.
+yt-dlp==2026.10.26
+imageio-ffmpeg==0.7.0
+Pillow==12.3.0
+pypdf==6.10.0
+PyYAML==6.0.3
